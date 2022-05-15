@@ -1,0 +1,24 @@
+version: 2.1
+
+orbs:
+  node: circleci/node@4.7
+
+commands:
+jobs:
+  test:
+    docker:
+      - image: cimg/node:16.13-browsers
+    steps:
+      - checkout
+      - install_npm_token
+      - run:
+          name: Install packages
+          command: npm install
+      - run:
+          name: Run tests
+          command: npm test
+workflows:
+  base:
+    jobs:
+      - test:
+          context: global

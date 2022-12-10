@@ -2,15 +2,17 @@
   "name": "@heathmont/postman-poc",
   "version": "0.1.0",
   "private": true,
-  "repository": "https://github.com/coingaming/postman-poc/",
+  "repository": "https://github.com/testers-haven/js-postman-runner",
   "dependencies": {
-    "allure-service-client": "^1.0.0",
+    "allure-service-client": "^1.0.2",
     "allure-commandline": "^2.17.2",
     "axios": "^0.26.1",
     "dotenv": "^16.0.0",
     "newman": "^5.3.2",
     "newman-reporter-allure": "^1.0.7",
-    "newman-reporter-testrail": "^1.0.48"
+    "newman-reporter-testrail": "^1.0.48",
+    "axios": "^0.26.1",
+    "minimist": "^1.2.6"
   },
   "scripts": {
     "test": "node testRunner.js"
